@@ -1,0 +1,163 @@
+/* CSS Reset and Basic Styles */
+:root {
+    --primary-color: #3A72B7;
+    --secondary-color: #2c5a94;
+    --background-color: #f4f7fc;
+    --sidebar-bg: #2c3e50;
+    --sidebar-text: #ecf0f1;
+    --sidebar-active: #3498db;
+    --card-bg: #ffffff;
+    --text-color: #34495e;
+    --border-color: #e0e0e0;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 260px;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #34495e;
+}
+.sidebar-header h2 {
+    font-size: 1.5rem;
+}
+.sidebar-nav {
+    flex-grow: 1;
+    list-style: none;
+}
+.sidebar-nav li a {
+    display: flex;
+    align-items: center;
+    padding: 18px 25px;
+    text-decoration: none;
+    color: var(--sidebar-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+.sidebar-nav li a i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+.sidebar-nav li a:hover {
+    background-color: var(--secondary-color);
+}
+.sidebar-nav li a.active {
+    background-color: var(--sidebar-active);
+    color: #fff;
+    font-weight: 600;
+}
+.sidebar-footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #34495e;
+}
+.sidebar-footer a {
+    color: var(--sidebar-text);
+    text-decoration: none;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    margin-left: 260px; /* Same as sidebar width */
+    padding: 30px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Stats Cards */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.stat-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+}
+.stat-card .icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+}
+.stat-card .info h3 {
+    font-size: 1rem;
+    color: #7f8c8d;
+    text-transform: uppercase;
+}
+.stat-card .info p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.icon.revenue { background-color: #27ae60; }
+.icon.bookings { background-color: #2980b9; }
+.icon.users { background-color: #f39c12; }
+.icon.tours { background-color: #8e44ad; }
+
+
+/* Recent Bookings Table */
+.recent-bookings {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+.recent-bookings h2 {
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
