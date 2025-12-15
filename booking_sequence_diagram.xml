@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- HEADER NOTES (Top Row) -->
+    <mxCell id="2" value="Khách hàng" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffffff;strokeColor=#000000;size=15;align=center;" vertex="1" parent="1">
+      <mxGeometry x="50" y="40" width="120" height="50" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="3" value="Trang Đặt Tour" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffffff;strokeColor=#000000;size=15;align=center;" vertex="1" parent="1">
+      <mxGeometry x="220" y="40" width="120" height="50" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="4" value="BookingController" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffffff;strokeColor=#000000;size=15;align=center;" vertex="1" parent="1">
+      <mxGeometry x="450" y="40" width="180" height="50" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="5" value="BookingModel" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffffff;strokeColor=#000000;size=15;align=center;" vertex="1" parent="1">
+      <mxGeometry x="720" y="40" width="150" height="50" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="db" value="Database" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffffff;strokeColor=#000000;size=15;align=center;" vertex="1" parent="1">
+      <mxGeometry x="950" y="40" width="120" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- INSTANCE LIFELINES (Bottom Row: Role : Class) -->
+    <mxCell id="6" value=":User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="70" y="120" width="80" height="40" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="7" value=":BookingView" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="240" y="120" width="80" height="40" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="8" value="Controller :&#xa;BookingController" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="480" y="120" width="120" height="40" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="9" value="Model :&#xa;BookingModel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="745" y="120" width="100" height="40" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="10" value=":Database" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="970" y="120" width="80" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- Vertical Lines -->
+    <mxCell id="11" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="110" y="900" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="12" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="280" y="900" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="13" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="8">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="540" y="900" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="14" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="9">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="795" y="900" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="15" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="10">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="1010" y="900" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Activations & Messages -->
+    
+    <!-- 1. Submit View -->
+    <mxCell id="act1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="275" y="180" width="10" height="650" as="geometry"/>
+    </mxCell>
+    <mxCell id="msg1" value="1: Gửi thông tin (POST)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="110" y="180" as="sourcePoint"/>
+        <mxPoint x="275" y="180" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 2. Call Controller -->
+    <mxCell id="act2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="535" y="220" width="10" height="550" as="geometry"/>
+    </mxCell>
+    <mxCell id="msg2" value="2: Gửi yêu cầu đặt (handleRequest)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="285" y="220" as="sourcePoint"/>
+        <mxPoint x="535" y="220" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 3. Self Call: Validate Session -->
+    <mxCell id="msg3" value="3: validateSession()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" x="0" y="0" as="geometry">
+        <mxPoint x="545" y="250" as="sourcePoint"/>
+        <mxPoint x="545" y="280" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="575" y="265"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 4. Self Call: Prepare Data -->
+    <mxCell id="msg4" value="4: prepareBookingData()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" x="0" y="0" as="geometry">
+        <mxPoint x="545" y="310" as="sourcePoint"/>
+        <mxPoint x="545" y="340" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="575" y="325"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 5. Call Model: Get Tour Info -->
+    <mxCell id="act3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="790" y="360" width="10" height="100" as="geometry"/>
+    </mxCell>
+    <mxCell id="msg5" value="5: getTourInfo(id)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="545" y="360" as="sourcePoint"/>
+        <mxPoint x="790" y="360" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 6. Model Query DB -->
+    <mxCell id="actDB1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1005" y="380" width="10" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="msg6" value="6: SELECT..." style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="800" y="380" as="sourcePoint"/>
+        <mxPoint x="1005" y="380" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg7" value="7: Kết quả (Data)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1005" y="420" as="sourcePoint"/>
+        <mxPoint x="800" y="420" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 8. Return Info to Controller -->
+    <mxCell id="msg8" value="8: Thông tin Tour" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="790" y="450" as="sourcePoint"/>
+        <mxPoint x="545" y="450" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 9. Calculate Date -->
+    <mxCell id="msg9" value="9: calculateCheckoutDate()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" x="0" y="0" as="geometry">
+        <mxPoint x="545" y="480" as="sourcePoint"/>
+        <mxPoint x="545" y="510" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="575" y="495"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 10. Call Model: Save Booking -->
+    <mxCell id="act4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="790" y="540" width="10" height="100" as="geometry"/>
+    </mxCell>
+    <mxCell id="msg10" value="10: saveBooking(data)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="545" y="540" as="sourcePoint"/>
+        <mxPoint x="790" y="540" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 11. DB Insert -->
+    <mxCell id="actDB2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1005" y="560" width="10" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="msg11" value="11: INSERT..." style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="800" y="560" as="sourcePoint"/>
+        <mxPoint x="1005" y="560" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="msg12" value="12: Thực hiện thêm()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1005" y="600" as="sourcePoint"/>
+        <mxPoint x="800" y="600" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 13. Return Success -->
+    <mxCell id="msg13" value="13: Kết quả (True/False)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="790" y="630" as="sourcePoint"/>
+        <mxPoint x="545" y="630" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 14. Alert -->
+    <mxCell id="msg14" value="14: Hiển thị thông báo (Alert)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeColor=#000000;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="545" y="680" as="sourcePoint"/>
+        <mxPoint x="110" y="680" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

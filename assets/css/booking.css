@@ -1,0 +1,77 @@
+/**
+ * booking
+ */
+h2 {
+  text-align: center;
+  color: #043f5f;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.booking-container {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#booking-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #043f5f;
+}
+
+#booking-form input,
+#booking-form select,
+#booking-form textarea {
+  padding: 12px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+fieldset {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+fieldset legend {
+  font-weight: bold;
+  color: #043f5f;
+}
+
+button {
+  color: rgb(2, 2, 2);
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #005f8d, #0077b6);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
