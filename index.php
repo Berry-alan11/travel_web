@@ -201,7 +201,7 @@ session_start();
                     </p>
 
                     <div class="btn-group">
-                        <a href="info.php">
+                        <a href="about.php">
                             <button class="btn btn-primary">Tìm hiểu thêm</button>
                         </a>
                         <a href="book.php">

@@ -5,12 +5,9 @@ class BookingModel {
     private $conn;
 
     public function __construct() {
-        global $conn; // Lấy biến $conn từ connect.php
-        if (!isset($conn)) {
-             $this->conn = new mysqli("localhost", "root", "", "travelworldweb");
-        } else {
-            $this->conn = $conn;
-        }
+        require_once 'DatabaseConnection.php';
+        $dbConn = new DatabaseConnection();
+        $this->conn = $dbConn->connect();
     }
 
     // Lấy thông tin tour theo ID
